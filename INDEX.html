@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TATOWEB</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <div class="fondo"></div>
+    <div class="container">
+        <div class="navbar">
+            <a href="INDEX.html"><img src="imagenes/LOGO TATO (1) (1).png" alt="" class="logo"></a>
+            <nav>
+                <ul id="idlist">
+                    <li><a href="#modelos3D" class="Button18">Modelos 3D</a></li>
+                    <li><a href="#investigaciones" class="Button18">Investigaciones</a></li>
+                    <li><a href="#disenos" class="Button18">Diseños</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col1">
+                <div class="logo-principal">
+                    <img src="imagenes/LOGO TATO (1) (1).png" alt="" class="logo-pri">
+                    <p class="nombres">David Fernando Alvarez</p>
+                    <p class="Prof">Multimedia Engineer</p>
+                </div>
+            </div>
+            <div class="botones_info">
+                <a href="https://drive.google.com/file/d/1Vw_DrGoswwPaz_NdjNu-5UzWZ60h2NBy/view?usp=sharing" target="_blank" class="botoncv">CV</a>
+                <a href="https://www.linkedin.com/in/david-alvarez-495a391ba/" target="_blank" class="botonlink">Linkedin</a>
+                <a href="wa.link/5muo42" target="_blank" class="botonWhats">WhatsApp</a>
+            </div>
+            
+            <div class="Modelos3d" id="modelos3D">
+                <p class="titulom">Mis Modelos3D</p>
+                <p class="descripm">Como modelador 3D, mi pasión reside en dar vida a ideas abstractas y transformarlas en realidades visuales impactantes. me dedico a crear modelos 3D detallados y realistas que cautiven a cualquier audiencia.</p>
+                
+                <!-------MODELO 1-------->
+                <div class="titulom1">Modelo de un Walkman</div>
+                <model-viewer id="modelo1" src="Modelos/WALKMAN_V2.glb" 
+                alt="Modelo Walkman"  
+                camera-controls 
+                ar 
+                ar-modes="webxr scene-viewer quick-look">
+                </model-viewer>
+
+                <!-------MODELO 2-------->
+                <div class="titulom2">Modelo de un ipod</div>
+                <model-viewer id="modelo1" src="Modelos/ipodv3.glb" 
+                alt="Modelo ipod" 
+                camera-controls 
+                camera-target="2m 1m 3m"
+                ar 
+                ar-modes="webxr scene-viewer quick-look">
+                </model-viewer>
+
+                <!-------MODELO -------->
+                <div class="titulom3">Modelo de un ipod</div>
+                <model-viewer id="modelo1" src="Modelos/patineta.glb" 
+                alt="Modelo ipod" 
+                camera-controls 
+                
+                orientation="0deg 45deg 20deg"
+                ar 
+                ar-modes="webxr scene-viewer quick-look">
+                </model-viewer>
+                <div class="tituloA1">Si quieres ver Todos mis Modelos</div>
+                <a href="https://sketchfab.com/Tatosky_7" target="_blank" class="botonporta">Mi Portafolio</a>
+            </div> 
+
+        </div>
+        <div class="Investigaciones" id="investigaciones"></div>
+            <p class="tituloI">Investigaciones</p>
+            <div class="inves1">AUTOS ELECTRICOS 
+                <p id="descripA">Esta investigación aborda el creciente impacto de los autos eléctricos en el sector automotriz, explorando su evolución, tecnología, beneficios ambientales y retos actuales.
+                </p>
+                <a href="https://drive.google.com/file/d/1mlDwzBmQVnit0YgcniHK5SJ0X4m6syNd/view?usp=sharing" target="_blank" class="botonauto"></a>
+            </div>
+            <div class="IMG1">
+                <img src="imagenes/AutosElectricos.PNG" alt="">
+            </div>
+            <div class="inves2"> DETECCION DE PLAGAS
+                <P id="descripD">Esta investigación se enfoca en la aplicación de técnicas avanzadas para la detección temprana de plagas en hojas de plantas, utilizando imágenes digitales y algoritmos de procesamiento. El objetivo principal es desarrollar métodos eficientes para identificar de manera precisa y rápida las señales de infestación </P>
+                <a href="https://drive.google.com/file/d/10NddygHLXP3UuY-3kz3asw9U_rsxMMdA/view?usp=sharing" target="_blank" class="botondetec"></a>
+            </div>
+            <div class="IMG2">
+                <img src="imagenes/detec.PNG" alt="">
+            </div>
+
+        
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

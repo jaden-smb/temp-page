@@ -1,0 +1,586 @@
+/*-------------------BODY-------------------*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.fondo{
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        background-image: url(imagenes/barcas-1024x640.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(50%); /* Oscurece solo la imagen */
+        z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+}
+/*------navbar----*/
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(138, 26, 26, 0.8), rgba(2, 1, 1, 0));
+    position: fixed;
+    top: 0;
+    z-index: 1; /* Cambia a un valor positivo */
+}
+
+.logo{
+    height: 70px;
+    margin-top: 15px;
+    padding-left: 50px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    margin-top: 15px;
+    margin-right: 3%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 25px;
+}
+
+
+
+
+/*---------- principal y botones---------- */
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col1{
+    position: relative;
+    flex-basis: 100%;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.col1 .logo-pri{
+    align-items: center;
+    width:65%;
+    margin-left: 180%;
+}
+
+.nombres{
+    position: absolute;
+    white-space: nowrap;
+    font-size: 35px;
+    left: 490px;
+    top: 200px;
+    font-family:'inter';
+    color: #ffffff;   
+}
+.Prof{
+    position: absolute;
+    white-space: nowrap;
+    left: 560px;
+    top: 250px;
+    font-size: 25px;
+    font-family:'inter';
+    font-style: oblique;
+    color: #ffffff;   
+}
+/* ------BOTONES-----*/
+.botoncv{
+    position: absolute;
+    top: 500px;
+    width: 130px;
+    height: 80px;
+    background-image: url('imagenes/cv_logo.png'); /* Imagen inicial */
+    background-color: #ffffff; 
+    background-size: 30%;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 2px solid #ffffff;
+    transition: background-image 0.3s ease, background-color 0.3s ease; 
+    border-radius: 20%;
+/* TEXTO */
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding-left: 50px; 
+    font-size: 20px; 
+    color: #333; 
+    font-weight: bold; 
+}
+.botoncv:hover{
+  
+    background-image: url('imagenes/CV_logo\ \(blanco\).png'); /* Imagen inicial */
+    background-color: #ff5151; 
+    background-size: 30%;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 2px solid #ff5151;
+    transition: background-image 0.3s ease, background-color 0.3s ease; 
+    border-radius: 20%;
+/* TEXTO */
+    font-size: 20px; 
+    color: #ffffff; 
+    font-weight: bold; 
+}
+
+.botonlink{
+    position: absolute;
+    top: 500px;
+    left: 580px;
+    width: 130px;
+    height: 80px;
+    background-image: url('imagenes/linkedin\(negro\).png'); /* Imagen inicial */
+    background-color: #ffffff; 
+    background-size: 30%;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 2px solid #ffffff;
+    transition: background-image 0.3s ease, background-color 0.3s ease; 
+    border-radius: 20%;
+/* TEXTO */
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding-left: 50px; 
+    font-size: 20px; 
+    color: #333; 
+    font-weight: bold; 
+}
+
+.botonlink:hover{
+  
+    background-image: url('imagenes/linhedin\(colo\).png'); /* Imagen inicial */
+    background-color: #0077b5; 
+    background-size: 30%;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 2px solid #0077b5;
+    transition: background-image 0.3s ease, background-color 0.3s ease; 
+    border-radius: 20%;
+/* TEXTO */
+    font-size: 20px; 
+    color: #ffffff; 
+    font-weight: bold; 
+}
+
+.botonWhats{
+    position: absolute;
+    top: 500px;
+    left: 850px;
+    width: 130px;
+    height: 80px;
+    background-image: url('imagenes/whatsapp\(negro\).png'); /* Imagen inicial */
+    background-color: #ffffff; 
+    background-size: 30%;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 2px solid #ffffff;
+    transition: background-image 0.3s ease, background-color 0.3s ease; 
+    border-radius: 20%;
+/* TEXTO */
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding-left: 50px; 
+    font-size: 20px; 
+    color: #333; 
+    font-weight: bold; 
+}
+.botonWhats:hover{
+  
+    background-image: url('imagenes/WhatsApp_icon.png'); /* Imagen inicial */
+    background-color: #4ccc5b; 
+    background-size: 38%;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 2px solid #4ccc5b;
+    transition: background-image 0.3s ease, background-color 0.3s ease; 
+    border-radius: 20%;
+/* TEXTO */
+    font-size: 20px; 
+    color: #ffffff; 
+    font-weight: bold; 
+}
+
+/* -----------MIS MODELOS 3D-------------*/
+.Modelos3d{
+    position: absolute;
+    align-items: center;
+    margin-top: 2000px;
+    width: 1340px;
+    height: 1360px;
+    background-color: #333;
+   
+}
+.titulom{
+    color: #f8f8f8;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline white;
+}
+.descripm{
+    color: #f8f8f8;
+    text-align: center;
+    font-size: 30px;
+    font-family: inter;
+}
+/*------MODELOs-----*/
+.titulom1{
+    font-size: 22px;
+    margin-left: 42%;
+    color: white;
+    text-decoration: underline;
+}
+.titulom2{
+    font-size: 22px;
+    margin-left: 42%;
+    color: white;
+    text-decoration: underline;
+}
+.titulom3{
+    font-size: 22px;
+    margin-left: 42%;
+    color: white;
+    text-decoration: underline;
+}
+#modelo1{
+    margin-left: 38%;
+    height: 300px;
+    
+}
+.tituloA1{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    left: 150px;
+}
+
+.botonporta{
+    position: absolute;
+    top: 1220px;
+    left: 720px;
+    width: 180px;
+    height: 80px;
+    background-image: url('imagenes/sketchfab-logo-black.png'); /* Imagen inicial */
+    background-color: #ffffff; 
+    background-size: 30%;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 2px solid #ffffff;
+    transition: background-image 0.3s ease, background-color 0.3s ease; 
+    border-radius: 20%;
+/* TEXTO */
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding-left: 50px; 
+    font-size: 20px; 
+    color: #333; 
+    font-weight: bold; 
+
+}
+.botonporta:hover{
+  
+    background-image: url('imagenes/sketchfab-logo.png'); /* Imagen inicial */
+    background-color: #1aaad9; 
+    background-size: 35%;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: 2px solid #1aaad9;
+    transition: background-image 0.3s ease, background-color 0.3s ease; 
+    border-radius: 20%;
+/* TEXTO */
+    font-size: 20px; 
+    color: #ffffff; 
+    font-weight: bold; 
+}
+
+
+/* -------------- INVESTIGACIONES---------------*/
+.Investigaciones{
+    position: absolute;
+    align-items: center;
+    margin-top: 1980px;
+    width: 1340px;
+    height: 1360px;
+    background-color: #292424;
+}
+.tituloI{
+    position: absolute;
+    font-size: 40px;
+    text-decoration: underline;
+    color: white;
+    top: 2000px;
+    left: 40%;
+}
+.inves1{
+    
+    position: absolute;
+    width: 550px;      /* Ancho del cuadrado */
+    height: 300px;     /* Alto del cuadrado */
+    color: white;
+    top: 2150px;
+    left: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+#descripA{
+    padding-top: 1px;
+    font-size: 32px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.IMG1 img{
+    position: absolute;
+    top: 2110px;
+    left: 55%;
+    width: 40%; 
+}
+.botonauto{
+    position: absolute;
+    top: 290px;
+    left: 220px;
+    width: 80px;
+    height: 80px;
+    background-image: url('imagenes/file-pdf\ \(1\).png'); /* Imagen inicial */
+    background-color: #ffffff; 
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #ffffff;
+    transition: background-image 0.3s ease, background-color 0.3s ease; 
+    border-radius: 50%;
+
+}
+.inves2{
+    
+    position: absolute;
+    width: 550px;      /* Ancho del cuadrado */
+    height: 300px;     /* Alto del cuadrado */
+    color: white;
+    top: 2600px;
+    right: 80px;
+    text-align: center;
+    font-size: 30px;
+}
+#descripD{
+    padding-top: 1px;
+    font-size: 30px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.IMG2 img{
+    position: absolute;
+    top: 2610px;
+    left: 5%;
+    width: 40%; 
+}
+.botondetec{
+    position: absolute;
+    top: 380px;
+    left: 220px;
+    width: 80px;
+    height: 80px;
+    background-image: url('imagenes/file-pdf\ \(1\).png'); /* Imagen inicial */
+    background-color: #ffffff; 
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #ffffff;
+    transition: background-image 0.3s ease, background-color 0.3s ease; 
+    border-radius: 50%;
+}
+.botonauto:hover{
+    background-image: url('imagenes/file-pdf.png'); /* Imagen inicial */
+    background-color: #d91a1a; 
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #d91a1a;
+    transition: background-image 0.3s ease, background-color 0.3s ease; 
+    border-radius: 50%;
+}
+.botondetec:hover{
+    background-image: url('imagenes/file-pdf.png'); /* Imagen inicial */
+    background-color: #d91a1a; 
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #d91a1a;
+    transition: background-image 0.3s ease, background-color 0.3s ease; 
+    border-radius: 50%;
+}
+
+
+
+
+
+/*-------------------RESPONSIVE-------------------*/
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 10px 0;
+        padding-left: 0;
+    }
+
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-right: 30px;
+    }
+    .col1 .logo-pri{
+        position:absolute; 
+        width:160px;
+        height: 177px;
+        padding-left: 240px;
+        margin-top: -100px;
+    }
+
+    .nombres {
+        font-size: 28px;
+        left: 180px;
+        top: 60px;
+        text-align: center;
+    }
+
+    .Prof {
+        font-size: 18px;
+        left: 230px;
+        top: 110px;
+        text-align: center;
+    }
+
+    .botoncv {
+        position: absolute;
+        width: 8%;
+        height: 40px;
+        margin: 10px 80px;
+        font-size: 18px;
+ 
+    }
+
+    .botonlink{
+        position: absolute;
+        width: 15%;
+        height: 40px;
+        margin: 10px -350px;
+        font-size: 18px;
+    }
+
+    .botonWhats{
+        position: absolute;
+        width: 13%;
+        height: 40px;
+        margin: 10px -430px;
+        font-size: 18px;
+
+    }
+
+    .Modelos3d {
+        width: 100%;
+        height: 1300px;
+        margin-top: 1800px;
+        z-index: -1;
+    }
+
+    .titulom{
+        font-size: 25px;
+        text-align: center;
+    }
+    .descripm{
+        font-size: 15px;
+    }
+    .tituloA1{
+        top: 1110px;
+        font-size: 20px;
+        left: 200px;
+    }
+    .botonporta{
+        position: absolute;
+        width: 13%;
+        height: 40px;
+        margin: -50px -440px;
+        font-size: 18px;
+
+    }
+/*-----ivesticaion */
+    .Investigaciones{
+        width: 100%;
+        height: 1300px;
+        margin-top: 1850px;
+        z-index: -1;
+    }
+    .tituloI{
+        top: 1860px;
+    }
+    .inves1{
+        font-size: 25px;
+        top: 2000px;
+    }
+    .botonauto{
+        top: 410px;
+    }
+    #descripA{
+        padding-top: 1px;
+        font-size: 21px; 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .IMG1 img{
+        top: 2180px;
+        left: 45%;
+        width: 40%; 
+    }
+    
+    .inves2{
+        font-size: 25px;
+        top: 2500px;
+    }
+    #descripD{
+        padding-top: 1px;
+        font-size: 20px; 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .IMG2 img{
+        top: 2720px;
+        left: 60px;
+        width: 40%; 
+    }
+    .botondetec{
+        top: 450px;
+    }
+}
